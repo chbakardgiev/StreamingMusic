@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      .container{
+          margin-top: 5%
+      }
+  </style>
+<title>Form</title>
+<script src="validation.js"></script>
+</head>
+<body>
+    <div style="margin-top: 0;display: block;float:right;">
+    <input type="button" onclick="location.href = 'register.html'" class="btn btn-default" value="Register">
+    </div>
+<div class="container">
+    <form class="form-horizontal" name="form1" onsubmit="return validateFormOnSubmit(this)" method="post" action="check.php">
+     <div class="form-group">
+         <label class="control-label col-sm-2" for="myusername">Username:</label>
+         <div class="col-sm-10">
+         <input type="text" class="form-control" id="myusername" name="myusername">
+         </div>
+     </div>
+        <div class="form-group">
+     <label class="control-label col-sm-2" for="mypassword">Password:</label>
+           <div class="col-sm-10"> 
+           <input type="password" class="form-control" name="mypassword" id="mypassword">
+           </div>
+        </div>
+        <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+          <input type="submit" class="btn btn-default" value="Submit">
+        <input type="reset" class="btn btn-default" value="Reset">
+        
+      </div>
+        </div>
+    </form>
+</div>
+    
+</body>
+</html>
